@@ -28,6 +28,7 @@ git clone https://github.com/IHE/fhir-ig-history-template.git fhir-ig-history-te
 ```
 git clone https://github.com/FHIR/ig-registry.git
 ```
+<br/>
 
 <br/>
 5.  Copy the IG root folder to a folder called **{ig-root}** e.g. ***my-ig*** under this working folder 
@@ -44,6 +45,7 @@ example: cd my-ig
 ```
 example: md www
 ```
+<br/>
 
 <br/>
 8. Copy history template to web root folder
