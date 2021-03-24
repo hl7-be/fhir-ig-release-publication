@@ -7,10 +7,13 @@ This process describes a way to publish implementationGuides to
 # 1. Prepare the environment
 
 1. Create a folder for your implementation guide publication (all releases of the IG will be in added to that folder, and the folder can be updated to the web server)
-
   - e.g. Publication
+<br/>
+<br/>
 
 2. Download the publisher jar to this folder
+<br/>
+<br/>
 
 3. Clone the history template to a folder called fhir-ig-history-template in this folder (or add it as a submodule if you want)
 ```
