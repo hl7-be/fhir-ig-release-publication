@@ -70,7 +70,7 @@ Note: the url must be same as the IG's canonical URL
 1. Change or retain these parameters from the ImplementationGuide:
 
 ```
-{ig_id}: ImplementationGuide.id: e.g. hiv-cr
+{ig_id}: ImplementationGuide.id: e.g. be-core
 {ig_url}: ImplementationGuide.url: e.g. http://hl7belgium.org/fhir/be-core/ImplementationGuide/be-core
      this should take the form {base}/{ig_id}/ImplementationGuide/{ig_id}
 {ig_version}: ImplementationGuide.version: e.g. 0.1.0
