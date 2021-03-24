@@ -176,7 +176,7 @@ e.g.
 {
   "version" = {ig_version}, 
   "date" = {rel-date},
-  "desc"= {rel-desc},
+  "desc" = {rel-desc},
   "path" = {canonical}/{ig_version}, 
   "status" = {rel-status}, 
   "sequence" = ... 
