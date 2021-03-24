@@ -179,7 +179,7 @@ Note:
 5.	Run the publisher with -publish option  
 
 ```.\_genonce.bat -publish (base)/(ig_id)/(ig_version)```  
-e.g.
+e.g.  
 ```.\_genonce.bat -publish http://hl7-belgium.org/fhir/be-core/0.1.0```  
 
 
@@ -232,9 +232,9 @@ e.g.
 
 8. copy the output content to a folder named after the version  
 
-```xcopy /s /y output {webroot}\{ig_version}\```
-e.g.
-```xcopy /s /y output www\0.2.0\```
+```xcopy /s /y output {webroot}\{ig_version}\```  
+e.g.  
+```xcopy /s /y output www\0.2.0\```  
 
 <br/>
 <br/>
