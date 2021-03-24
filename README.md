@@ -140,31 +140,31 @@ Note:
 # 3.	Add a new release (run this for every new release)  
 
 <br/>
-1. Check and/or change these IG parameters:
-• ```{ig_version}```: ImplementationGuide.version: e.g. 0.1.0
-• ```{ig_status}```: ImplementationGuide.status: e.g. draft
-• ```{ig_fhir_version}```: ImplementationGuide.fhirVersion: e.g. 4.0.1
+1. Check and/or change these IG parameters:  
+• ```{ig_version}```: ImplementationGuide.version: e.g. 0.1.0  
+• ```{ig_status}```: ImplementationGuide.status: e.g. draft  
+• ```{ig_fhir_version}```: ImplementationGuide.fhirVersion: e.g. 4.0.1  
 
 <br/>
 <br/>
 
 2.	Do not change:  
 
-• ```{ig_id}```: ImplementationGuide.id: e.g. be-core
-• ```{ig_url}```: ImplementationGuide.url: e.g. http://hl7belgium.org/fhir/be-core/ImplementationGuide/be-core
-• ```{ig_package_id}```: ImplementationGuide.packageId: e.g. hl7.be.fhir.be-core
+• ```{ig_id}```: ImplementationGuide.id: e.g. be-core  
+• ```{ig_url}```: ImplementationGuide.url: e.g. http://hl7belgium.org/fhir/be-core/ImplementationGuide/be-core  
+• ```{ig_package_id}```: ImplementationGuide.packageId: e.g. hl7.be.fhir.be-core  
 
 <br/>
 <br/>
 
 3.	Define the following for the new release:   
-
-• ```ig_id```: the IG id, must be the same as **{ig_version}**
-• ```rel_version```: the version of the IG, must be the same as **{ig_version}**
-• ```rel_fhir_version```: the version of the IG, must be the same as **{ig_fhir_version}**
-• ```rel_status```: the publication status (see valueset above)
-• ```rel_desc```: the description of this release
-• ```rel_date```: the date of this release
+  
+• ```ig_id```: the IG id, must be the same as **{ig_version}**  
+• ```rel_version```: the version of the IG, must be the same as **{ig_version}**  
+• ```rel_fhir_version```: the version of the IG, must be the same as **{ig_fhir_version}**  
+• ```rel_status```: the publication status (see valueset above)  
+• ```rel_desc```: the description of this release  
+• ```rel_date```: the date of this release  
 
 <br/>
 <br/>
@@ -178,9 +178,9 @@ Note:
 
 5.	Run the publisher with -publish option  
 
-```.\_genonce.bat -publish (base)/(ig_id)/(ig_version)```
+```.\_genonce.bat -publish (base)/(ig_id)/(ig_version)```  
 e.g.
-```.\_genonce.bat -publish http://hl7-belgium.org/fhir/be-core/0.1.0```
+```.\_genonce.bat -publish http://hl7-belgium.org/fhir/be-core/0.1.0```  
 
 
 <br/>
@@ -200,8 +200,10 @@ e.g.
   fhir_version = {rel_fhir_version}, 
   changes: (optional link to a page describing changes)
 }
-```
+```  
+
 example:   
+
 ```json
 {
   "version": "0.2.0",
@@ -213,16 +215,17 @@ example:
   "fhirversion": "4.0.1",
   "current": true
 }
-```
+```  
+
 * *Note: Besides the CI build version that should stay the same, only one entry can have "current": true*  
 <br/>
 <br/>
 
 7. Copy the output content to the root folder  
 
-```xcopy /s /y output <webroot>```
-e.g.
-```xcopy /s /y output www```
+```xcopy /s /y output <webroot>```  
+e.g.  
+```xcopy /s /y output www```  
 
 <br/>
 <br/>
@@ -238,16 +241,16 @@ e.g.
 
 9. Run the publisher in update mode  
 
-```java -jar ..\publisher.jar -publish-update -folder <webroot> -registry ..\ig-registry\fhir-ig-list.json -history ..\fhir-ig-history-template```
-e.g. 
-```java -jar ..\publisher.jar -publish-update -folder www -registry ..\ig-registry\fhir-ig-list.json -history ..\fhir-ig-history-template```
+```java -jar ..\publisher.jar -publish-update -folder <webroot> -registry ..\ig-registry\fhir-ig-list.json -history ..\fhir-ig-history-template```  
+e.g.  
+```java -jar ..\publisher.jar -publish-update -folder www -registry ..\ig-registry\fhir-ig-list.json -history ..\fhir-ig-history-template```  
 
 <br/>
 <br/>
 
 10.	Just in case, IF you have a custom template, copy the template’s style files to history (we’ll fix this)  
 
-```xcopy /s /y <webroot>\assets <webroot>\assets-hist```
-e.g. 
-```xcopy /s /y www\assets www\assets-hist```
+```xcopy /s /y <webroot>\assets <webroot>\assets-hist```  
+e.g.   
+```xcopy /s /y www\assets www\assets-hist```  
                  
