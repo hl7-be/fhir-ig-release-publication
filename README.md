@@ -33,7 +33,7 @@ git clone https://github.com/FHIR/ig-registry.git
 <br/>
 
 <br/>
-5.  Copy the IG root folder to a folder called **{ig-root}** e.g. ***my-ig*** under this working folder  
+5. Copy the IG root folder to a folder called **{ig-root}** e.g. ***my-ig*** under this working folder  
 
 <br/>
 <br/>
