@@ -146,9 +146,9 @@ Note:
 
 1. Check and/or change these IG parameters:  
 
-```{ig_version}```: ImplementationGuide.version: e.g. 0.1.0  
-```{ig_status}```: ImplementationGuide.status: e.g. draft  
-```{ig_fhir_version}```: ImplementationGuide.fhirVersion: e.g. 4.0.1  
+• ```{ig_version}```: ImplementationGuide.version: e.g. 0.1.0  
+• ```{ig_status}```: ImplementationGuide.status: e.g. draft  
+• ```{ig_fhir_version}```: ImplementationGuide.fhirVersion: e.g. 4.0.1  
 
 <br/>
 <br/>
@@ -258,4 +258,4 @@ e.g.
 ```xcopy /s /y <webroot>\assets <webroot>\assets-hist```  
 e.g.   
 ```xcopy /s /y www\assets www\assets-hist```  
-                 
+                  
