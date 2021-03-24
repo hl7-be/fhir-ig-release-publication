@@ -1,4 +1,6 @@
-This process is documented by HL7 Belgium, with the support of the Belgium community and VAZG and RIZIV/INAMI
+Acknowledgement / Credits:
+This process is documented for HL7 Belgium, with the support of the Belgium community and VAZG and RIZIV/INAMI
+
 
 
 # Process for Publishing a FHIR Implementation Guide (for non-HL7 IGs)
