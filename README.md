@@ -77,7 +77,8 @@ Note: the url must be same as the IG's canonical URL
 <br/>
 <br/>
 <br/>
-# 2. Setup the IG for publication
+
+# 2. Setup the IG for publication  
 
 1. Change or retain these parameters from the ImplementationGuide:  
 
@@ -94,7 +95,8 @@ Note: the url must be same as the IG's canonical URL
 2.  Check the ig filename. Best if it is **{ig\_id}**.json /  **{ig\_id}**.xml  
 <br/>
 <br/>
-3. Run the publisher to make sure everything is ok:
+
+3. Run the publisher to make sure everything is ok:  
 ```
 java -jar ..\publisher.jar -ig ig.ini
 ```
@@ -121,7 +123,7 @@ java -jar ..\publisher.jar -ig ig.ini
 }
 ```
 Note:
-  - **{canonical}** = **{base}**/**{ig-id}** e.g.
+  - **{canonical}** = **{base}**/**{ig-id}** e.g.  
     http://hl7belgium.org/fhir/be-core
   - make sure there is a category
 
@@ -137,7 +139,7 @@ Note:
 <br/>
 <br/>
 
-2.	Do not change:
+2.	Do not change:  
 • ```{ig_id}```: ImplementationGuide.id: e.g. be-core
 • ```{ig_url}```: ImplementationGuide.url: e.g. http://hl7belgium.org/fhir/be-core/ImplementationGuide/be-core
 • ```{ig_package_id}```: ImplementationGuide.packageId: e.g. hl7.be.fhir.be-core
@@ -145,7 +147,7 @@ Note:
 <br/>
 <br/>
 
-3.	Define the following for the new release:  
+3.	Define the following for the new release:   
 • ```ig_id```: the IG id, must be the same as **{ig_version}**
 • ```rel_version```: the version of the IG, must be the same as **{ig_version}**
 • ```rel_fhir_version```: the version of the IG, must be the same as **{ig_fhir_version}**
