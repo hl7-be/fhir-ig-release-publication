@@ -24,7 +24,9 @@ git clone https://github.com/HL7/fhir-ig-history-template.git fhir-ig-history-te
 git clone https://github.com/IHE/fhir-ig-history-template.git fhir-ig-history-template (soon)
 ```
 <br/>
-4. Add the registry (clone or submodule) submodule to a folder called ig-registry  
+
+4. Add the registry (clone or submodule) submodule to a folder called ig-registry   
+
 ```
 git clone https://github.com/FHIR/ig-registry.git
 ```
@@ -36,6 +38,7 @@ git clone https://github.com/FHIR/ig-registry.git
 <br/>
 <br/>
 6. Change the working folder to the IG root folder  
+
 ```
 example: cd my-ig
 ```
