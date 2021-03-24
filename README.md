@@ -97,7 +97,8 @@ Note: the url must be same as the IG's canonical URL
 ```
 
 <br/>
-2.  Check the ig filename. Best if it is **{ig\_id}**.json /  **{ig\_id}**.xml  
+2.  Check the ig filename. Best if it is in the form
+**{ig\_id}**.json /  **{ig\_id}**.xml  
 <br/>
 <br/>
 
