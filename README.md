@@ -33,11 +33,12 @@ git clone https://github.com/FHIR/ig-registry.git
 5.  Copy the IG root folder to a folder called **{ig-root}** e.g. ***my-ig*** under this working folder 
 
 <br/>
+<br/>
 6. Change the working folder to the IG root folder
 ```
 example: cd my-ig
 ```
-
+<br/>
 <br/>
 7. Create a folder that will be your web root (typically the folder that you will publish to the web)
 ```
