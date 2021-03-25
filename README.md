@@ -3,6 +3,8 @@
 with the support of the Belgium community, [VAZG](https://www.zorg-en-gezondheid.be/), [RIZIV/INAMI](https://www.inami.fgov.be
 ) and [eHealth](http://ehealth.fgov.be/)* 
 
+<br/>
+<br/>
 
 
 # Process for Publishing a FHIR Implementation Guide (for non-HL7 IGs)
