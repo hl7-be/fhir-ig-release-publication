@@ -9,8 +9,8 @@ with the support of the Belgium community, [VAZG](https://www.zorg-en-gezondheid
 
 # Process for Publishing a FHIR Implementation Guide (for non-HL7 IGs)
 
-This process describes a way to publish implementationGuides to 
-
+This process describes a way to publish implementationGuides to its "final" state, i.e. the official release with the necessary redirects and history. This is the procedure used by HL7 Belgium to publish the Belgian FHIR profiles, but can be used by software vendors who wish to publish their specifications online, or other groups. The tooling is in constant improvement and is therefore subject to change.
+This process is now automated for local production of the content, see the accompanying script.
 
 
 # 1. Prepare the environment
