@@ -1,7 +1,6 @@
-*Acknowledgement / Credits:*
-*This process is documented for and by [HL7 Belgium](https://hl7belgium.org/), with the support of the Belgium community, [VAZG](https://www.zorg-en-gezondheid.be/), [RIZIV/INAMI](https://www.inami.fgov.be
-) and [eHealth](http://ehealth.fgov.be/)* 
-
+*Acknowledgements:*
+*This process is documented for [HL7 Belgium](https://hl7belgium.org/), with the support of [VAZG](https://www.zorg-en-gezondheid.be/), [RIZIV/INAMI](https://www.inami.fgov.be) and [eHealth](http://ehealth.fgov.be/)* 
+With thanks Bob Milius for the missing steps, and Grahame Grieve and the FHIR community for the underlying tooling and support.
 
 <br/>
 
