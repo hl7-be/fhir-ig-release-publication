@@ -39,6 +39,18 @@ history_template_repo ='https://github.com/openhie/fhir-ig-history-template.git'
 ig_registry_repo = 'https://github.com/FHIR/ig-registry.git'
 
 
+### download publisher
+if (not(os.path.isfile(file_to_check))):
+    reply = str(input('\n### Publisher not found in .. folder. Download (y/n)? ')).lower().strip()
+    if reply[:1] != 'y':
+        print('Canceling.')
+        exit(0)
+    else:
+        dlurl = 'https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar'
+        r = requests.get(dlurl, allow_redirects=True)
+        open('publisher.jar', 'wb').write(r.content)
+            
+
 #### 1.1 ask user for missing variables
 
 if (webrootfolder==''):
