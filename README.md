@@ -1,5 +1,5 @@
 *Acknowledgement / Credits:*
-*This process is documented for HL7 Belgium,  
+*This process is documented for and by [HL7 Belgium](https://hl7belgium.org/),  
 with the support of the Belgium community, [VAZG](https://www.zorg-en-gezondheid.be/), [RIZIV/INAMI](https://www.inami.fgov.be
 ) and [eHealth](http://ehealth.fgov.be/)* 
 
