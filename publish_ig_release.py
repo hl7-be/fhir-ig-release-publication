@@ -41,7 +41,7 @@ ig_registry_repo = 'https://github.com/FHIR/ig-registry.git'
 
 ### download publisher
 if (not(os.path.isfile(file_to_check))):
-    reply = str(input('\n### Publisher not found in .. folder. Download (y/n)? ')).lower().strip()
+    reply = str(input('\n### Publisher not found in folder. Download (y/n)? ')).lower().strip()
     if reply[:1] != 'y':
         print('Canceling.')
         exit(0)
