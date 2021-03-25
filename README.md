@@ -14,6 +14,7 @@ This process describes a way to publish implementationGuides to its "final" stat
 This process is now automated for local production of the content and will be further automated / integrated with other tools.  
 To use this, just clone this repository and run the script. Or follow the instructions below.
 
+<br/>
 
 # 1. Prepare the environment
 
