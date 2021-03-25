@@ -3,7 +3,7 @@
 with the support of the Belgium community, [VAZG](https://www.zorg-en-gezondheid.be/), [RIZIV/INAMI](https://www.inami.fgov.be
 ) and [eHealth](http://ehealth.fgov.be/)* 
 
-<br/>
+
 <br/>
 
 
