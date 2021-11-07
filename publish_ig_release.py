@@ -24,9 +24,6 @@ use_git_submodules = False
 webrootfolder = 'www'
 ig_source_repo = ''
 ig_source_folder = ''
-#org = 'JCT'
-#ig_title = "My FHIR profiles"
-
 
 # load release token if any exists
 print('\n### Opening the release token')
@@ -46,8 +43,6 @@ ig_intro = release.get("intro")
 ig_category = release.get("ig_category")
 ci_url = release.get("ci_url")
 org = release.get("org")
-#ci_url = "http://build.fhir.org/ig/costateixeira/testrel/"
-
 
 
 if (ig_source_repo!=''):
@@ -93,7 +88,7 @@ if ((igrootfolder=='') or (not(os.path.exists(igrootfolder)))):
 
 
 
-igini_filename = os.path.join('.',igrootfolder, 'ig.ini')
+igini_filenayme = os.path.join('.',igrootfolder, 'ig.ini')
 igini.read(igini_filename)
 try:
   ig_filename = igini['IG']['ig']
@@ -101,7 +96,6 @@ except:
   print("ig.ini not found or empty. Aborting.")
   exit(1)
 print(ig_filename)
-
 
 
 
@@ -200,7 +194,7 @@ print(os.getcwd())
 # Try and build the IG
 if not(skip_1_build):
   print('\n### Running the publisher to see if everything is ok')
-  result = os.system('java -jar ..\publisher.jar -ig ig.ini') 
+  result = os.system('java -jar ../publisher.jar -ig ig.ini') 
   if (result!=0):
       print('Error: IG publication process not successful. Check the IG')
       exit(2)
@@ -211,7 +205,7 @@ if not(skip_1_build):
 
 #3.5
 print('\n### Running the publisher to prepare the current version for publishing')
-os.system('java -jar ..\publisher.jar -ig ig.ini -publish '+ig_canonical+'/'+ig_version)
+os.system('java -jar ../publisher.jar -ig ig.ini -publish '+ig_canonical+'/'+ig_version)
 
 
 #1.2 create webroot folder
@@ -348,8 +342,8 @@ copytree('output', os.path.join(webrootfolder,ig_version,''),dirs_exist_ok=True,
 print('\n### Running the publication update procedure')
 #os.system('java -jar ..\publisher.jar -publish-update -folder '+ webrootfolder+ ' -registry ../ig-registry/fhir-ig-list.json -history ../fhir-ig-history-template -filter y')
 
-print('java -jar ..\publisher.jar -publish-update -folder '+ webrootfolder +  ' -registry ./ig-registry/fhir-ig-list.json -history ./fhir-ig-history-template')
-os.system('java -jar ..\publisher.jar -publish-update -root . -folder '+ webrootfolder  + ' -registry ./ig-registry/fhir-ig-list.json -history ./fhir-ig-history-template')
+print('java -jar ../publisher.jar -publish-update -folder '+ webrootfolder +  ' -registry ./ig-registry/fhir-ig-list.json -history ./fhir-ig-history-template')
+os.system('java -jar ../publisher.jar -publish-update -root . -folder '+ webrootfolder  + ' -registry ./ig-registry/fhir-ig-list.json -history ./fhir-ig-history-template')
 
 
 #3.10
